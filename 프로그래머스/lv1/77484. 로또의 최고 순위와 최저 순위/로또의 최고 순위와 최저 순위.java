@@ -4,8 +4,10 @@ class Solution {
         int lowCount = 0;
         int highCount = 0;
         for (int i = 0; i < lottos.length; i++) {
-            if (lottos[i] == 0)
+            if (lottos[i] == 0) {
                 highCount++;
+                continue;
+            }
             for (int j = 0; j < win_nums.length; j++) {
                 if (lottos[i] == win_nums[j]) {
                     highCount++;
