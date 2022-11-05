@@ -24,11 +24,7 @@ class Solution {
         if (answer.length() < 1)    return "-1";
         answer.reverse();
         String result = answer.toString();
-        if (!result.contains("1") && !result.contains("2") && !result.contains("3") &&
-           !result.contains("4") && !result.contains("5") && !result.contains("6") &&
-           !result.contains("7") && !result.contains("8") && !result.contains("9")) {
-            return "0";
-        }
+        if (result.charAt(0) == '0') return "0";
         return result;
         // return String.valueOf(Long.parseLong(result));
     }
