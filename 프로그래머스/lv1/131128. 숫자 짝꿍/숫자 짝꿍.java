@@ -26,6 +26,5 @@ class Solution {
         String result = answer.toString();
         if (result.charAt(0) == '0') return "0";
         return result;
-        // return String.valueOf(Long.parseLong(result));
     }
 }
